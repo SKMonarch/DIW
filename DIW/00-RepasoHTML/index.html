@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- favicon -->
+    
+     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+   <style>
+      span{
+         background-color: aqua;
+         color: violet;
+      }
+      .pred{
+         background-color: red;
+      }
+      #pcoloryellow{
+         color: yellow;
+      }
+      #pcolorwhite{
+         color: white;
+      }
+   </style>
+</head>
+<body>
+    <!-- ETIQUETAS DE TEXTO,PÁRRAFO Y ENCABEZADOS-->
+     <h1>ENCABEZADO 1</h1>
+     <h6>ENCABEZADO 6</h6>
+     <p>Lorem ipsum dolor sit amet, 
+        consectetur adipisicing elit. 
+        Deserunt sequi, obcaecati quaerat ducimus repellendus quos voluptas sit maiores accusamus quas ipsam tenetur ab laborum sapiente eos doloremque culpa! Nesciunt, reiciendis.</p>
+     <pre>
+        Este
+        parrafo
+        cambia
+        de 
+        linea
+     </pre>
+     <br> 
+     <hr>
+     <!--MARCADORES0-->
+    <a href="#p1">Marcador1</a>
+    <a href="#p2">Marcador2</a>
+
+
+
+     <!--ETIQUETAS DE FORMATO-->
+     <p>Esto es <b>negrita</b></p><!-- font-weight-->
+     <p>Esto es <i>italica</i></p>
+     <p>Esto es <u>subrayado</u></p>
+     <p>Esto es <strong>importante</strong></p>
+     <p>Esto es <em>enfasis</em></p>
+     <p>Esto es <mark>remarcado</mark></p>
+     <p>Esto es <del>eliminado</del></p>
+     <p>Esto es <ins>insertado</ins></p>
+     
+     <!--LISTAS-->
+     <ol type="I">
+        <li>l1</li>
+        <li>l2</li>
+     </ol>
+     <ul type="square">
+        <li>lp1</li>
+        <li>lp2</li>
+     </ul>
+     <dl>
+       <dt>Térmico</dt>
+       <dd>Descipción</dd>
+     </dl>
+    <!--MAPA DE IMÁGENES-->
+    <img src="img/macaco.jpeg" usemap="#mimapa" alt="Macaco">
+
+    <map name="mimacaco">
+      
+      <area shape="circle" coords="100,150,50" href="https://es.wikipedia.org/wiki/Macaco_(músico)" alt="Parque">
+      
+      <!-- Si haces clic en la escuela (rectángulo), vas a la página de la escuela -->
+      <area shape="rect" coords="200,100,300,200" href="escuela.html" alt="Escuela">
+    </map>
+    <!--Tablas-->
+   <table border="2" >  
+      <caption>Titulo de la tabla</caption>
+      <tr>
+         <th>Titulo1</th>
+         <th>Titulo2</th>
+      </tr>
+      <tr>
+         <td>Contenido1</td>
+         <td>Contenido2</td>
+      </tr>
+   </table>
+   <!--thead,tbody,tfoot-->
+   <!--Agrupar elementos de la tabla y darles estilos segun la estructura-->
+
+   <!--Contenedores (Div,Span)-->
+   <div>
+         <p>Hola</p>
+         <p>Adios</p>
+   </div>
+   <p>Esto es <span>un</span> parrafo</p>
+   
+   <!--Clases e Identificadores-->
+      <p class="pred">Alcachofa</p>
+      <p class="pred" id="pcoloryellow">Pepinillos</p>
+      <p class="pred" id="pcolorwhite">Esponjas</p>
+   <!--Etiquetas semanticas html
+      header se utiliza para contener la cabecera de una página o sección
+      footer se utiliza para definir el pie de página de una página o sección.
+      main se utiliza para encapsular el contenido principal de un documento
+      nav se usa para definir un conjunto de enlaces de navegación.
+      section se utiliza para agrupar contenido relacionado dentro de una
+      article se usa para representar contenido independiente que puede ser
+      aside  se utiliza para contener contenido que está relacionado
+   -->
+   <header>
+      <h1>Mi Sitio Web</h1>
+      <nav>
+          <ul>
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#about">Acerca de</a></li>
+          </ul>
+      </nav>
+  </header>
+  <nav>
+   <ul>
+       <li><a href="#home">Inicio</a></li>
+       <li><a href="#services">Servicios</a></li>
+       <li><a href="#contact">Contacto</a></li>
+   </ul>
+</nav>
+
+  <main>
+   <h2>Bienvenido a mi sitio</h2>
+   <p>Este es el contenido principal de la página.</p>
+</main>
+<section>
+   <h2>Servicios</h2>
+   <p>Ofrecemos una variedad de servicios para satisfacer tus necesidades.</p>
+</section>
+<article>
+   <h2>Título del Artículo</h2>
+   <p>Este es el contenido del artículo. Puede ser leído independientemente del resto de la página.</p>
+</article>
+<aside>
+   <h3>Notas Relacionadas</h3>
+   <p>Esta es información adicional o enlaces relacionados.</p>
+</aside>
+
+  <footer>
+   <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+</footer>
+  <!--Formularios-->
+  <h1>Formulario de Registro</h1>
+<form action="#" method="post">
+    <!-- Campo de texto -->
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <!-- Campo de correo electrónico -->
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <!-- Campo de número -->
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" min="0" max="120" required>
+
+    <!-- Campo de contraseña -->
+    <label for="contraseña">Contraseña:</label>
+    <input type="password" id="contraseña" name="contraseña" required>
+
+    <!-- Campo de fecha -->
+    <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+    <!-- Menú desplegable -->
+    <label for="pais">País:</label>
+    <select id="pais" name="pais" required>
+        <option value="">Seleccione un país</option>
+        <option value="argentina">Argentina</option>
+        <option value="chile">Chile</option>
+        <option value="mexico">México</option>
+        <option value="espanha">España</option>
+        <option value="colombia">Colombia</option>
+    </select>
+
+    <!-- Casillas de verificación -->
+    <label>Intereses:</label>
+    <input type="checkbox" id="deportes" name="intereses" value="deportes">
+    <label for="deportes">Deportes</label>
+    <input type="checkbox" id="musica" name="intereses" value="musica">
+    <label for="musica">Música</label>
+    <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+    <label for="tecnologia">Tecnología</label>
+
+    <!-- Botón de envío -->
+    <button type="submit">Enviar</button>
+</form>
+
+   <!--Method en Form
+      Get:Este método envía los datos del formulario a través de la URL. Los parámetros del formulario se adjuntan a la URL en la forma de una cadena de consulta (query string)
+      Post:Este método envía los datos del formulario a través del cuerpo de la solicitud HTTP, lo que permite que se envíen grandes cantidades de datos de forma más segura.
+      -->
+      <hr>
+      <h3>Metodo GET</h3>
+      <form action="/buscar" method="GET">
+         <label for="nombre">Nombre:</label>
+         <input type="text" id="nombre" name="nombre" required>
+         <br>
+         <label for="edad">Edad:</label>
+         <input type="number" id="edad" name="edad" required>
+         <br>
+         <input type="submit" value="Buscar">
+     </form>
+     <hr>
+     <h3>Metodo POST</h3>
+     <form action="/registrar" method="POST">
+      <label for="usuario">Nombre de Usuario:</label>
+      <input type="text" id="usuario" name="usuario" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+      <input type="submit" value="Registrar">
+  </form>
+  <hr>
+
+    <!--ENLACE CON ICONO-->
+    <a href="https://www.google.com" title="Google" target="_blank"><img src="img/macaco.jpeg" alt="Google" width="50" height="auto"></a>
+    <!--ENLACES-->
+    <a href="https://www.google.com" title="Google" target="_self">Google</a>
+    <a href="index2.html" title="index2"  >IR a index2</a>
+    <a href="mailto:christiansanlu@gmail.com" title="gmail">Enviar gmail</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, tempore culpa quis dolor excepturi iste sequi, optio perferendis laudantium hic dolore quas porro ut fugiat ipsam alias ipsum, sint ducimus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non perspiciatis provident quis ab repudiandae veniam repellendus ea minima consequuntur temporibus officia eaque quod nemo laborum architecto possimus, magni praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi dicta tenetur cumque aspernatur cupiditate similique esse dignissimos doloremque deserunt? Error aliquid omnis aut accusamus earum voluptatem autem nulla molestiae illo.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, quas. Asperiores inventore totam assumenda! Nesciunt, optio eos. Accusamus iure ipsam sed, quas, laudantium necessitatibus itaque adipisci maxime error animi nihil.</p>
+    <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quasi veritatis voluptatum fugit rem error quos eum dignissimos omnis. Ipsa harum illum minus deserunt quae architecto repellendus inventore non assumenda.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, tempore culpa quis dolor excepturi iste sequi, optio perferendis laudantium hic dolore quas porro ut fugiat ipsam alias ipsum, sint ducimus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non perspiciatis provident quis ab repudiandae veniam repellendus ea minima consequuntur temporibus officia eaque quod nemo laborum architecto possimus, magni praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi dicta tenetur cumque aspernatur cupiditate similique esse dignissimos doloremque deserunt? Error aliquid omnis aut accusamus earum voluptatem autem nulla molestiae illo.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, quas. Asperiores inventore totam assumenda! Nesciunt, optio eos. Accusamus iure ipsam sed, quas, laudantium necessitatibus itaque adipisci maxime error animi nihil.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, tempore culpa quis dolor excepturi iste sequi, optio perferendis laudantium hic dolore quas porro ut fugiat ipsam alias ipsum, sint ducimus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non perspiciatis provident quis ab repudiandae veniam repellendus ea minima consequuntur temporibus officia eaque quod nemo laborum architecto possimus, magni praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi dicta tenetur cumque aspernatur cupiditate similique esse dignissimos doloremque deserunt? Error aliquid omnis aut accusamus earum voluptatem autem nulla molestiae illo.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, quas. Asperiores inventore totam assumenda! Nesciunt, optio eos. Accusamus iure ipsam sed, quas, laudantium necessitatibus itaque adipisci maxime error animi nihil.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, tempore culpa quis dolor excepturi iste sequi, optio perferendis laudantium hic dolore quas porro ut fugiat ipsam alias ipsum, sint ducimus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non perspiciatis provident quis ab repudiandae veniam repellendus ea minima consequuntur temporibus officia eaque quod nemo laborum architecto possimus, magni praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi dicta tenetur cumque aspernatur cupiditate similique esse dignissimos doloremque deserunt? Error aliquid omnis aut accusamus earum voluptatem autem nulla molestiae illo.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, quas. Asperiores inventore totam assumenda! Nesciunt, optio eos. Accusamus iure ipsam sed, quas, laudantium necessitatibus itaque adipisci maxime error animi nihil.</p>
+    <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quasi veritatis voluptatum fugit rem error quos eum dignissimos omnis. Ipsa harum illum minus deserunt quae architecto repellendus inventore non assumenda.</p>
+
+</body>
+</html>
