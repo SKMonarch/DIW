@@ -1,0 +1,75 @@
+/*SELECTORES:
+    Selectores básicos
+    Combinadores
+    Selectores de Pseudoclases
+    Selectores de Pseudoelementos
+    Selectores de atributos
+    */
+/*
+
+    Selectores Basicos:
+        Universal: * (selecciona todos los elementos del html)
+        Etiqueta/Elemento p,h1,h2,h3,ul,ol,table.....
+        Encadenado/Agrupado(,)
+        De Descendientes directos (>)
+        De Descendientes 
+        De Clases (.)
+        De Identificadores (#)
+        */
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+h1{
+    color: blue;
+    font-style: oblique;
+}
+
+p{
+    color: pink;
+    font-style: inherit;
+}
+h1,h2{
+    text-align: center;
+}
+div > a{
+    color: blueviolet;
+}
+div > p{
+    color: cadetblue;
+    
+}
+
+div p {
+    font-style:italic ;
+    text-decoration: overline;
+}
+
+.Contenedor{
+    margin-top: 40px;
+    margin-bottom:0px;
+    background-color: rgb(180, 180, 37);
+    border-radius: 100%;
+}
+
+.contenedor2{
+    background-color: rgb(200, 91, 91);
+}
+
+.contenedor3{
+    padding-bottom: 25px;
+    padding-top: 10px;
+    margin-bottom:40px;
+    background-color: rgb(180, 180, 37);
+    border-radius: 100%;
+}
+#cuerpo{
+
+    background-color: darkgreen;
+}
+#cuerpo2{
+
+    background-color: rgb(203, 223, 25);
+}

@@ -1,0 +1,58 @@
+.color{
+    /*color:azure;*/
+    color: rgba(74, 193, 191, 0.9);
+    /*opacity*/
+    /*color: #3a813a;*/
+
+}
+/*tex-align: center,left,righ, justify*/
+.alineacion{
+    text-align: end;
+}
+
+/*vertical_align*/
+.middle {
+    vertical-align: middle;
+}
+.top {
+    vertical-align: top;
+}
+.bottom {
+    vertical-align: bottom;
+}
+
+/*tex-decoration: es la propiedad
+    text-decoration-color
+    text-decoration-line
+    text-decoration-thickness
+    tex-decoration-style
+    */
+.subrayado {
+    /*text-decoration-line:underline ;
+    text-decoration-color: aquamarine;
+    text-decoration-thickness: 2px;
+    text-decoration-style: double;*/
+    text-decoration: underline aquamarine double 2px;
+}
+
+/*text-transform*/
+.transformacion {
+    text-transform: uppercase;
+}
+
+/*text-shadow*/
+.sombra {
+    text-shadow: 2px 2px 5px burlywood, 2px 2px 5px green;
+}
+
+/*espaciado: 
+    letter-spacing
+    word-spacing
+    text-indent
+    line-height*/
+.espaciado{
+    letter-spacing: 20%;
+    word-spacing:3px ;
+    text-indent: 50%;
+    line-height: 5px;
+}
