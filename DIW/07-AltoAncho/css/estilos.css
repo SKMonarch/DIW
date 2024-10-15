@@ -1,0 +1,33 @@
+/*
+ALTO Y ANCHO
+width
+height
+min-width
+max-width
+min-height
+max-height
+
+
+    Medidas absolutas(px,cm,mm,in,pt,pc...)
+    Medidadas Relativas(%,em,rem,vh,vw,auto)
+    inherit,initial
+*/
+
+
+.caja1,.caja2,.caja3,.caja4{
+    background-color: aquamarine;
+    border: 1px solid green;
+    height: 100px;
+}
+
+.caja1{
+    width: 600px;
+}
+
+.caja2,.caja4{
+    max-width: 600px;
+}
+
+.caja3{
+    min-width: 500px;
+}

@@ -1,0 +1,30 @@
+
+h1{
+    border: 2px solid #00f;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom:30px ;
+}
+
+h2{
+    border: 2px solid #AAA;
+    padding-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+ul{
+    border: 2px solid #0F0;
+    /*
+    padding-right: 10px;
+    padding-left: 10px;
+*/
+    }
+
+ul li{
+    margin-bottom:15px ;
+
+}
+ul li:last-child{
+    margin-bottom: 0px;
+}

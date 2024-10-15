@@ -56,3 +56,42 @@
     text-indent: 50%;
     line-height: 5px;
 }
+
+
+/*UNIDADES DE MEMIDA
+
+ABSOLUTAS: no dependen de nigún elemento externo, la ventana contenedor padre,..
+fijas y constantes no varian de un dispositivo a otro
+px,pt 1/72,in 2,54,cm, mm
+
+
+RELATIVAS sí que dependen de un elemento externo,la venta,contenedor,elemento padre.
+%: depende del tamaño del contenedor padre
+em: depende del elemento padre
+rem: dependel elememento raíz html, 16px 
+vh: viewport height
+vw: viewport width depende de la pantalla del navegador
+*/
+
+h1{
+   /* font-size: 50px;*/
+   font-size:  1.5rem;;
+}
+
+p{
+        font-size: 20px;
+    /*font-size: 0.9rem;*/
+}
+
+
+.absoluto{
+    width: 600px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.relative{
+    width: 50%;
+    height: 100px ;
+    background-color: blue;
+}

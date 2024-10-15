@@ -1,0 +1,99 @@
+/*BORDE
+    border: 2px solid black
+    border-color:
+    border-style: (solid,dotted,dashed,inset,outset,ridge
+    border-width: 2px
+    
+    
+    4 border
+    border-top
+    border-bottom
+    border-left
+    border-right
+
+
+    border-radius
+    */
+
+
+.caja1{
+    border-bottom: 8px ridge gold;
+    border-top: 3px inset pink;
+    border-left: 1px dotted green;
+    border-right: 5px dashed lightgreen;
+    height: 200px;
+    width: 200px;
+}
+
+
+
+/*RELLENO padding
+padding-top:
+padding-botton:
+padding-left:
+padding-right:
+
+
+padding: 20px;  (Todos) 
+padding: 10px 20px; sup/inf der/izq
+padding 10px 5px 20px; sup der/izq inf
+padding: 5px 10px 15px 20px sup der inf izq
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.caja2 {
+    background-color: bisque;
+    width:100px;
+    border: solid 2px red;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 7px;
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+p{
+    border: 1px solid black;
+}
+
+
+/*Espacio fuera del borde margin
+margin-top:
+margin-botton:
+margin-left:
+margin-right:
+
+
+margin: 20px;  (Todos) 
+margin: 10px 20px; sup/inf der/izq
+margin 10px 5px 20px; sup der/izq inf
+margin: 5px 10px 15px 20px sup der inf izq
+*/
+
+
+
+/*Colapso de margin
+
+el margin con mayor valor es el que se sobrepone*/
+
+
+.caja3,.caja4{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+
+}
+
+.caja3{
+    margin-bottom: 20px;
+}
+
+.caja4{ 
+    margin-top: 20px;
+}
