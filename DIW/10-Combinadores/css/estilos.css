@@ -1,0 +1,28 @@
+/*COMBINADOR DE DESCENDIENTES*/
+
+div p{
+    color: yellow;
+}
+
+/*COMBINADOR DE DESCENDIENTES DIRECTOS*/
+
+div > p {
+    color: green;
+}
+
+/*COMBINADOR DE HERMANO SIGUIENTE (+)*/
+
+div +p{
+    color: aqua;
+}
+
+
+/*COMBINADOR HERMANOS SIGUIENTES (~)*/
+
+div~p{
+    color: blueviolet;
+}
+
+div~p+p{
+    color: red;
+}
