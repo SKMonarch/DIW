@@ -1,0 +1,31 @@
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+table,th,td {
+    border: 2px solid black;
+}
+
+
+th {
+    padding: 70px;
+    text-align: center;
+    background-color: sienna;
+    font-family: cornsilk;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: cornsilk;
+
+}
+tr:nth-child(odd) {
+    background-color: darksalmon;
+}
+
+
+tr:hover {
+    background-color: sienna;
+    color: white;
+}

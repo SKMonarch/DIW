@@ -1,0 +1,4 @@
+div p {background-color:pink;} /*Le dará un fondo rosa a todo <p> dentro de  un <div>*/
+div > p {background-color:red;} /*Le dará el fondo rojo a todo <p> hijo directo de un <div>*/
+div ~ p {background-color:purple;} /*Le dará el fondo morado a todo los hermanos posteriores a undiv,independientemente de cuantos elementos existan*/
+div + p {background-color:green;} /*Le dará el fondo verde a los <p> hermanos directos de un div(solo al primero */

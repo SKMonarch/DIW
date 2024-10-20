@@ -1,0 +1,16 @@
+ul:first-of-type > li:first-of-type{
+    color: purple;
+    font-size: 20px;
+}
+
+ul:first-of-type > li:nth-last-child(1){
+    color: rgb(17, 100, 100);
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+ul:nth-of-type(2) > li {
+    color: black;
+    font-size: 40px;
+    text-shadow: 3px 3px 5px red;
+}

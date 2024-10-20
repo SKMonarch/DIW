@@ -1,0 +1,33 @@
+
+ .container {
+    border: 2px solid gray;
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Cambia el borde del contenedor cuando uno de sus hijos recibe el foco */
+.container:focus-within {
+    border-color: blue;
+}
+
+/*Aplica el mismo estilo a múltiples elementos */
+:is(h1, h2, p) {
+    color: red;
+    font-family: Arial, sans-serif;
+}
+
+/* Afecta los estilos de los marcadores de lista (<li>), como los puntos o números de una lista.*/
+ul li::marker {
+    color: green;
+    font-size: 1.5em;
+
+}
+
+/* es útil cuando quieres cambiar el estilo predeterminado del botón para que coincida con el diseño del sitio web. */
+input[type="file"]::file-selector-button {
+    background-color: rgb(224, 106, 146);
+    color: rgb(125, 98, 194);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;

@@ -1,0 +1,27 @@
+h2::first-letter {
+    font-size: xx-large;
+    font-family: fantasy;
+    color: violet;
+    font-weight: bold;
+}
+
+h2::first-line{
+    font-style: italic;
+    font-size: small;
+    text-decoration:underline solid black ;
+}
+p::before {
+    content: "*.";
+    color: blue;
+}
+
+p::after{
+    content: " -Aloja more don";
+    color: red;
+}
+
+
+
+P:hover{
+    color: brown;
+}

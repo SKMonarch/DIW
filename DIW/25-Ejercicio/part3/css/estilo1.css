@@ -1,0 +1,40 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table,td {
+    border: 2px solid black;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+tr:nth-child(1){
+    color: red;
+}
+tr:nth-child(2){
+    color: blue;
+}
+tr:nth-child(3){
+    color: green;
+}
+tr:nth-child(4){
+    color: orange;
+}
+tr:nth-child(5){
+    color: purple;
+}
+
+td:nth-child(2){
+    background-color: yellow;
+}
+td:nth-child(3){
+    background-color: pink;
+}
+td:nth-child(4){
+    background-color: grey;
+}
