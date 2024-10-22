@@ -1,0 +1,49 @@
+/*PROPIEDADES DE LAS LISTAS*/
+
+ul{
+    list-style-type: square;
+    list-style-position:inside;
+    
+}
+
+ul li:nth-child(even):hover{
+    color: red;
+    list-style-image: url(/DIW/15-PropiedadesListas/img/loteria.png);
+}
+
+ul li:nth-child(odd):hover{
+    color: blue;
+    list-style-image: url(/DIW/15-PropiedadesListas/img/mono.png);
+}
+ol{
+    list-style-type: georgian;
+    list-style-position: outside;
+}
+
+/*PROPIEDADES DE LAS TABLAS: border-collapse, border,margin,text-align,vertical-align*/
+
+table{
+    border: 2px solid black;
+    border-collapse:collapse;
+    width: 400px;
+    margin: 0 auto;
+}
+td,th{
+    height: 500px;
+    margin: 20px;
+}
+td{
+    vertical-align:middle;
+
+}
+th{
+    background-color: green;
+    vertical-align: middle;
+}
+tr:nth-child(even){
+    background-color: gray;
+}
+tr:nth-child(odd){
+    background-color: lightslategray;
+}
+

@@ -1,0 +1,36 @@
+
+body .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  /*PROPIEDADES DEL FONDO*/
+/*background-color
+    background-image
+    background-repeat
+    background-position
+    background-attachment
+*/
+body{
+  background-image: url(https://www.wwf.org.uk/sites/default/files/styles/max_650x650/public/2022-05/_WW236934.jpg?itok=JlG-1l9V);
+  background-repeat: none ;
+  background-size: cover;
+  background-attachment:scroll ;
+  background-position: bottom bottom;
+}
+  /*
+  :scroll -El fondo se mueve cuando haces scroll
+  :fixed  -El fondo no se mueve al hacer scroll
+  :local  -El fondo solo se mueve si el elemento donde está tiene scroll*/
+
+h1{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    padding:15px ;
+   
+}
+
+
+
+   
