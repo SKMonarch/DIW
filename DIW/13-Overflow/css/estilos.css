@@ -1,0 +1,38 @@
+/*
+
+overflow-x: desbordamiento en el x
+overflow-y: desbordamiento en el y
+overflow: propiedad abreviada
+valores: por defecto (visible)
+*/
+
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    /*overflow: visible;*/
+    margin-bottom: 20px;
+}
+
+.visible{
+    overflow: visible; /*por defecto,el contenido sale de la casa*/
+}
+
+.escondido {
+    overflow: hidden;/*Hidden esconde el desbordamiento y no se ve*/
+}
+
+.auto{
+    overflow: auto;/*auto: de forma automática si el contenido desborda pone barras de desplazamiento*/
+}
+
+.scroll{
+    overflow: scroll;/**/
+}
+.caja{
+    width: 40px;
+    height: 400px;
+    /*overflow-x: auto;*/
+    overflow-wrap: break-word; /*permite cortar pablaras para que no desborde y se adapte al contenedor*/
+}

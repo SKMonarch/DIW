@@ -1,0 +1,33 @@
+.noseve{
+    /*display: none;*/
+    visibility: hidden;
+}
+
+
+.seve:hover + .noseve {
+    /*display: block;*/
+    visibility: visible;
+    color:pink;
+}
+
+
+.text > span{
+    display: block;
+    font-weight: 20px;
+}
+
+
+.navegador > a{
+    display: block;
+    margin-bottom:10px ;
+}
+
+.caja1, .caja2, .caja3{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 1px solid blueviolet;
+    overflow: hidden;
+    /* display: inline-block;*/
+}
+
