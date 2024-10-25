@@ -1,0 +1,67 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;/*ancho y alto real = content + border + padding*/
+}
+
+
+
+ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+
+.vertical {
+    width: 200px;
+    background-color: gainsboro;
+    text-align: center;
+}
+
+.vertical li a {
+    text-decoration: none;
+    display: block;/*para que el a se visualice como bloque,y asu ocupa lo que su padre li*/
+    padding-bottom: 20px;
+}
+.vertical li  a:hover{
+    background-color: orange;
+    border-bottom: 1px solid black;
+}
+.vertical li a.active{
+    background-color: lightblue;
+    color:orange;
+    border-bottom: none;
+}
+.vertical li a:not(.active):hover {
+    border-bottom: 1px solid black;
+}
+
+
+/*HORIZONTAL*/
+.horizontal{
+    background-color: gainsboro;
+    text-align: center;
+    
+   
+}
+.horizontal li {
+    display: inline-block
+}
+
+.horizontal li a {
+    text-decoration: none;
+    padding:  16px 20px;
+    display: inline-block;
+}
+
+
+.horizontal li a:hover:not(.active){
+    background-color: orange;
+    font-weight: 900;
+    border-bottom: 1px solid black;   
+}
+
+.horizontal li a.active {
+    background-color: lightskyblue;
+    color: orange;
+}
