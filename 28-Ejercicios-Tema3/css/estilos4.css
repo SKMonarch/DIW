@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.container {
+    width: 100%;
+    box-sizing: border-box;
+}
+.caja {
+    width: 25%;
+    margin: 1%;
+    padding: 50px;
+    float: left;
+    background-color: gray;
+    color: white;
+}
