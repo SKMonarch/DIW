@@ -1,0 +1,58 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*DISPLAY:flex
+    El elemento que tenga la propiedad display flex tendrá una 
+    serie de propiedades específicas y sus hijos directos tambien 
+    tendrán unas propiedades específicas
+
+    # Propiedades del contenedor Flexible
+        flex-direction: indica la dirección de los hijos flexibles. row(default),colum, row-reverse,colum-reverse
+        justify-content: alinea horizontal o verticalmente,dependiendo de flex-direction (center,flex-start,flex-end,start,space-between,space-evenly,space-around)    
+    # Propiedades de los hijos directos del contenedor Flexible
+        align-item: alinea vertical o horizontal dependiendo del flex-direction
+        flex-wrap:permite tener varias filas de elementos flexibles.(no-wrap(default),wrap(varias filas)
+        align-content:alinea las filas de los elementos flexibles
+        */
+.flex-container-row,.flex-container-col{
+    background-color: antiquewhite;
+    
+    
+}
+
+.flex-item  {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: chartreuse;
+    color: blueviolet;
+}
+
+.flex-container-row{
+    display: flex; /*Se situan por defecto en linea*/
+    flex-direction: row;
+    justify-content: center;
+    /*alinea verticalmente,no veré nada si mi contenedor no tiene altura*/
+    height: 700px;
+    align-items:flex-end;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.flex-container-col{
+    display: flex;
+    flex-direction: column;
+    /*alinea verticalmente,para verlo tengo que dar altura al contenedor,
+    sino no tengo espacio para que se alineen verticalmente*/
+    height: 700px;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
