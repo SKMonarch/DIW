@@ -1,0 +1,189 @@
+/*CSS GENERAL*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+   
+    background-color: #222121 ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.buttons{
+    color:  #FFFFFF;
+    padding: 20px;
+    background-color: #52B959 ;
+    border: 1px solid grey;
+    border-radius: 20px;
+    text-align: center;
+    width:120px ;
+    text-decoration: none;
+}
+.buttons:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+ }
+/*CSS HEADER*/
+header {
+    background-color: #DD4912;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div-header-icone {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+}
+
+header h1 {
+    color: white;
+    font-size: 80px;
+}
+
+.div-header-button {
+    display: flex;
+    align-items: center;
+}
+
+.div-header-button > a {
+    margin-right: 20px;
+}
+
+
+/*Footer*/
+
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+/*menu-list*/
+.foot-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 20px;  
+    margin-bottom: 20px;  
+}
+
+.foot-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
+    align-items: flex-start; 
+    margin: 0;  
+    padding: 0;  
+}
+
+.foot-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;  
+}
+
+.foot-list ul li {
+    color: #888;  
+    font-size: 12px;  
+    margin-bottom: 10px;  
+}
+
+.foot-list ul li:first-child {
+    color: white;  
+    font-size: 15px;  
+    text-transform: uppercase;  
+}
+
+.foot-list ul li a {
+    color: inherit;  
+    text-decoration: none;  
+}
+
+.foot-list ul li a:hover {
+    text-decoration: underline;  
+}
+
+
+/*hr-footer*/
+.hr-footer {
+    border: 0.5px solid #555;
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+       
+
+
+/*metodo de pago*/
+.metodos-pago {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin: 30px;
+}
+
+.metodos-pago > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;  
+    height: 80px; 
+    border: 1px solid gray;
+    border-radius: 9px;
+    box-sizing: border-box; 
+}
+
+.metodos-icons {
+    width: 80%;   
+    height: 100px;  
+    padding: 6px;
+}
+
+
+
+
+
+/*info prevencion*/
+.prevencion {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+    color: #CCCCCC;
+}
+
+.prevencion-img{
+    background-color: #555;
+    border-radius: 35px;
+    height:90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+.prevencion-img a{
+    width: 700px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.prevencion-img  img{
+ width: 100%;
+ max-width: 300px;
+ height: 100%;
+}
+
+.prevencion > h4 {  
+    text-align: center;
+    text-decoration: solid;
+}
+

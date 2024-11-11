@@ -1,0 +1,14 @@
+h1{
+    font-size:25px;
+}
+
+img{
+    float:left;
+    width:250px;
+    height:150px;
+    margin:7px;
+}
+
+.contenedor img:nth-child(3){
+    clear:both;
+}

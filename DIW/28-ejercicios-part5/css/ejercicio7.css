@@ -1,0 +1,80 @@
+div > div{ 
+    border: 1px solid black;
+    font-size:20px;
+}
+
+.contenedor{
+    height: 560px;
+    position:relative;
+    padding-top:80px;
+}
+
+.bloque1{
+    position:absolute;
+    z-index:5;
+    background-color: red;
+    height:150px;
+    width:440px;
+    top:60px;
+    left:50px;
+}
+
+.hijo1{
+    position:absolute;
+    z-index:5;
+    background-color: pink;
+    height:150px;
+    width:400px;
+    top:40%;
+    left:20px;
+}
+
+.hijo2{
+    position:absolute;
+    z-index:4;
+    background-color: green;
+    height:460px;
+    width:240px;
+    top:30px;
+    right:40px;
+}
+
+.hijo3{
+    position:absolute;
+    z-index:3;
+    background-color:lightblue;
+    height:150px;
+    width:250px;
+    bottom:15px;
+    left:25px;
+}
+
+.bloque2{
+    position:absolute;
+    z-index:2;
+    background-color:blue;
+    height:600px;
+    width:440px;
+    top:0;
+    left:96px;
+}
+
+.bloque3{
+    position:absolute;
+    z-index:-1;
+    background-color:yellow;
+    height:100px;
+    width:560px;
+    bottom:0;
+    left:0;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .flex-container{
+            background-color: aqua;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            height: 200px;
+            align-items: flex-end;
+            flex-wrap: nowrap;
+            /*align-content: center; solo afecta si está flex-wrap: wrap*/
+        }
+        /*propiedades de los hijos flexibles
+            order: cambia el orden del hijo flexible
+            flex-basis: le da un tamaño al hijo flexible
+            align-self:alinea al hijo flexible
+            flex-grow:cuando hay espacio disponible, indica si puede crecer un hijo flexible
+                valores: 0 (no permite crecer), mayor que cero permite crecer y cuanto mayor es el numero más crece
+            flex-shrink cuando no hay espacio,indica que hijo puede disminuir su tamaño
+                valores: 0 (no puede disminuir), mayor que cero permite disminuir su tamaño a más.
+            */
+        .flex-item{
+            background-color: blanchedalmond;
+            border: 1px solid black;
+        }
+        .flex-item:nth-of-type(1){
+            order: 5;
+            flex-basis: 200px;
+            align-self: center;
+        }
+        .flex-item:nth-of-type(3){
+            order: 2;
+            flex-basis: 300px;
+            align-self: flex-start;
+        }
+        .flex-item:nth-of-type(4){
+            order: 3;
+            flex-basis:45px ;
+            align-self:flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+</body>
+</html>

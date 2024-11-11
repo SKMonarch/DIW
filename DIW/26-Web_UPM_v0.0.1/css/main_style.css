@@ -122,3 +122,10 @@ a > img {
 .div-nav-center a{
     margin-bottom: 20px;
 }
+
+/*Main*/
+/*Footer*/
+footer{
+    background-color: white;
+    height:200px ;
+}
