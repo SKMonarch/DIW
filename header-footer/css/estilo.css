@@ -55,135 +55,127 @@ header h1 {
 }
 
 
-/*Footer*/
-
-
+/* Footer */
 footer {
     background-color: #000000;
     color: #FFFFFF;
     padding: 20px;
     width: 100%;
-    position: relative;
+    font-size: 0.9em;
+    margin-top: auto;
 }
-/*menu-list*/
+
+/* Menú en Footer */
 .foot-menu {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    margin-top: 20px;  
-    margin-bottom: 20px;  
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .foot-list {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;  
-    align-items: flex-start; 
-    margin: 0;  
-    padding: 0;  
+    align-items: flex-start;
 }
 
 .foot-list ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;  
+    margin: 0;
 }
 
 .foot-list ul li {
-    color: #888;  
-    font-size: 12px;  
-    margin-bottom: 10px;  
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 10px;
 }
 
 .foot-list ul li:first-child {
-    color: white;  
-    font-size: 15px;  
-    text-transform: uppercase;  
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
 .foot-list ul li a {
-    color: inherit;  
-    text-decoration: none;  
+    color: inherit;
+    text-decoration: none;
 }
 
 .foot-list ul li a:hover {
-    text-decoration: underline;  
+    text-decoration: underline;
 }
 
-
-/*hr-footer*/
+/* Separador en Footer */
 .hr-footer {
     border: 0.5px solid #555;
     width: 90%;
     margin: 0 auto 20px auto;
 }
-       
 
-
-/*metodo de pago*/
+/* Métodos de pago */
 .metodos-pago {
     display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    margin: 30px;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
 }
 
 .metodos-pago > a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;  
-    height: 80px; 
+    width: 120px;
+    height: 80px;
     border: 1px solid gray;
     border-radius: 9px;
-    box-sizing: border-box; 
 }
 
 .metodos-icons {
-    width: 80%;   
-    height: 100px;  
-    padding: 6px;
+    width: 80%;
+    height: auto;
 }
 
-
-
-
-
-/*info prevencion*/
+/* Información de prevención */
 .prevencion {
     font-size: 12px;
     text-align: center;
-    line-height: 1.5;
     color: #CCCCCC;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
-.prevencion-img{
+.prevencion-img {
     background-color: #555;
     border-radius: 35px;
-    height:90px;
     display: flex;
-    justify-content: space-around;
-    align-items: center; 
-    width: 700px;
-    margin: 0 auto;
-    padding: 10px;
-
-}
-
-.prevencion-img a{
-    width: 700px;
-    height: 80px;
-    display: flex;
+    justify-content: center;
     align-items: center;
-}
-.prevencion-img  img{
- width: 100%;
- max-width: 300px;
- height: 100%;
-}
-
-.prevencion > h4 {  
-    text-align: center;
-    text-decoration: solid;
+    gap: 10px;
+    margin-top: 10px;
+    width: 50%;
+    padding: 10px;
 }
 
+.prevencion-img img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.prevencion span {
+    display: block;
+    margin-top: 5px;
+}
+
+
+.prevencion h4 {
+    color: white;
+    margin-bottom: 10px;
+}
