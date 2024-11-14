@@ -72,7 +72,7 @@
     text-decoration: none;
     border-radius: 5px;
     width:85%;
-    padding: 0.85rem;
+    padding: 0.35rem;
     text-align: center;
     color: palevioletred;
     transition: all 0.3s ;
@@ -108,7 +108,7 @@
     transition: all 0.3s ;
 }
 .footer div a:hover{
-    font-size: medium ;
+    font-size: small;
 }
 
 .social-links a{
