@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.grid-container2{
+    display: grid;
+    background-color: blanchedalmond;
+    /*gap: pripiedad abreviada gap-colim gap-row
+    gap-colum espacio entre columnas
+    gap-row espacio entre filas*/
+    grid-template-columns: 300px 500px 400px;
+    column-gap: 30px;
+    row-gap: 50px;
+}
+
+.grid-item2{
+    background-color: aquamarine;
+}
+.grid-container{
+    background-color: aqua;
+    display: grid;/*display:inline-grid no tiene todo el ancho de la pantalla*/
+    /*PROPIEDADES*/
+    /*grid-template-colums:  (define el numero de columnas que tiene su cuadricula y su ancho
+    se le pasa  una lista de valores separados por espacios, px, cm ,pt, %, fr(fracción), auto
+     */
+     /*grid-template-columns: 100PX 300PX 200PX;*/
+     /*grid-template-columns: 43% 23% 33%;*/
+    /*grid-template-columns: 1fr 2fr 1fr;*/
+    /*grid-template-columns: 25% 100px auto;*/
+    /*grid-template-columns: repeat(3,auto);repite x cantidad de veces ese valor*/
+    grid-template-columns: 100px 300px 200px;
+
+    /*justify-content mueve la cuadricula y la alinea horizontalmente
+    valores: center,left,right,space-between*/
+    justify-content: space-evenly;
+
+    /*grid-template-rows:permite definir el numero de filas y tamaño
+    se le pasa una lista de valores separados por espacios,px,%,auto*/
+    /*grid-template-rows:2fr 1fr 3fr ;*/
+    
+    grid-template-rows:100px 200px 100px;
+    
+    /*align-content: alinea la cuadricula verticalmente;
+    center,start,end,space-between*/
+    /*height: 800px;*/
+    /*align-content: space-around;*/
+}
+
+.grid-item{
+    background-color: brown;
+    border: 1px solid pink;
+}
