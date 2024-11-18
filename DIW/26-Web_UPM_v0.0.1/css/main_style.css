@@ -50,6 +50,7 @@ header h1{
 .div-header-button{
     float: inline-end;
     display: flex;
+    justify-content: end;
     align-items:center;
     
   }
@@ -73,6 +74,7 @@ nav {
     display: flex;
     flex-direction: column; 
     padding: 20px;
+    
 }
 
 

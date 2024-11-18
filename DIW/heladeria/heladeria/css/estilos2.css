@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container-grid{
+    background-color: black;
+    display: grid;
+    /*grid-template-areas*/ 
+    grid-template-areas: 
+        "header header "
+        "img img "
+        "main  aside"
+        "footer  footer";
+    grid-template-columns: 75% 25%;   
+}
+
+
+
+.item-grid{
+    border: 1 solid white;
+}
+
+
+#header{
+    background-color: pink;
+    /*grid-area: es propiedad abreviada de grid-column grid-row 1 / 3 1 / 4*/
+    /*vale tb para nombrar  a los hijos grid*/
+    grid-area:header;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: center;
+}
+#img{
+    background-color: aqua;
+    grid-area: img;
+}
+#main{
+    background-color: blue;
+    grid-area: main;
+
+
+}
+
+#aside{
+    background-color: green;
+    grid-area: aside;
+}
+
+#footer{
+    background-color: blueviolet;
+    grid-area: footer;
+}
