@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Principal</title>
   <link rel="stylesheet" href="css/login.css">
-  <script src="js/login.js" defer></script>
+  <script src="js/login.js"></script>
 </head>
 <body>
+ 
+
+
   <div id="modal" class="modal">
     <div class="modal-contenido">
       <span id="cerrar-modal" class="cerrar">&times;</span>
     
       <div class="contenedor-login">
         <div class="logo">UPM<span>sport</span></div>
-        <form class="formulario" id="login-form">
+        <form class="formulario">
           <div class="grupo">
             <label for="usuario">Nombre de usuario</label>
             <input type="text" id="usuario" placeholder="Nombre de usuario">
@@ -26,14 +29,15 @@
           <div class="texto-olvido">
             ¿Has olvidado tu <a href="#">usuario</a> o <a href="#">contraseña</a>?
           </div>
-          <button type="button" class="boton-iniciar" onclick="loguear()">INICIAR SESIÓN</button>
+          <button type="submit" class="boton-iniciar" onclick="loguear()">INICIAR SESIÓN</button>
         </form>
         <div class="seccion-registrar">
           <p>¿Nuevo usuario?</p>
-          <button class="boton-registrar" onclick="irRegistro()">REGISTRARSE</button>
+          <button class="boton-registrar">REGISTRARSE</button>
         </div>
       </div>
     </div>
   </div>
+
 </body>
 </html>

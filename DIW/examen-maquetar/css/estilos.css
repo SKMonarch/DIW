@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url('img/scotch.png');
+
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color:green
+}
+.header a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+.header >a> img{
+    width: 100px;
+    height: auto;
+}
+.nav{
+
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    justify-content: space-around;
+    align-content: center;
+    padding: 60px;
+    margin-bottom: 5%;
+}
+.nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.aside{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+
+.login{
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5%;
+    padding: 5%;
+}

@@ -5,19 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro</title>
   <link rel="stylesheet" href="css/register.css">
-  <script src="js/login.js" defer></script>
+  
 </head>
 <body>
-  <div id="modal" class="modal">
+ 
+ 
+
+  <div id="modal" class="modal" >
     <div class="modal-contenido">
       <span id="cerrar-modal" class="cerrar">&times;</span>
     
       <div class="contenedor-register">
         <div class="logo">UPM<span>sport</span></div>
-        <form class="formulario" id="register-form">
+        <form class="formulario">
           <div class="grupo">
             <label for="usuario">Nombre de usuario</label>
-            <input type="text" id="usuario-reg" placeholder="Nombre de usuario">
+            <input type="text" id="usuario" placeholder="Nombre de usuario">
           </div>
           <div class="grupo">
             <label for="correo">Correo electrónico</label>
@@ -25,20 +28,22 @@
           </div>
           <div class="grupo">
             <label for="contrasena">Contraseña</label>
-            <input type="password" id="contrasena-reg" placeholder="Contraseña">
+            <input type="password" id="contrasena" placeholder="Contraseña">
           </div>
           <div class="grupo">
             <label for="confirmar-contrasena">Confirmar Contraseña</label>
             <input type="password" id="confirmar-contrasena" placeholder="Confirmar Contraseña">
           </div>
-          <button type="button" class="boton-registrar" onclick="registrar()">REGISTRARSE</button>
+          <button type="submit" class="boton-registrar" onclick="registrar()">REGISTRARSE</button>
         </form>
         <div class="seccion-iniciar">
           <p>¿Ya tienes cuenta?</p>
-          <button class="boton-iniciar-sesion" onclick="irLogin()">INICIAR SESIÓN</button>
+          <button class="boton-iniciar-sesion">INICIAR SESIÓN</button>
         </div>
       </div>
     </div>
   </div>
+
+  <script src="js/open-login.js"></script>
 </body>
 </html>
