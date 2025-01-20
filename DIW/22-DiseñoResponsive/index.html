@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--el viewport es una pantalla grafica-->
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="css/screen.css" media="screen">-->
+    <!--<link rel="stylesheet" href="css/print.css" media="print">-->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!--si en media no se pone nada, es que se aplica en todos los medios-->
+    <!--
+        CONSULTAS DE MEDIOS O media queries
+        Uso:
+            Orientacion: landscape, portrait
+            Ancho-maximo, ancho-minimo, ancho(incluye scrollbar), alto-maximo, alto.minimo, alto
+            resolucion
+
+        Tipos de medios:
+            all: todos los medios
+            screen: pantalla móvil, tablet, ordenador
+            print: modo impresion
+
+            Sintaxis:
+            @media not/only tipoMedio and (caracteristica1) and (caracteristica2){
+            //instrucciones css
+            }
+            @media: propiedad de la consulta de medios
+            not: negacion que invierte todas las caracteriticas indicadas en @media
+            only: navegadores antiguos que no contemplasen diseño responsive
+            tipoMedio: screen, print, all...
+            caracteristicas: son ejemplos (orientacion: landscape), (max-width:768px), (min-width:480px)
+
+            Donde se pone el @media:
+                <link rel="stylesheet" href="css/smallscreen.css" media="screen" and (max-width:480px)>
+                
+                <link rel="stylesheet" href="css/estilos.css"> esto se pone en el head
+                se pone dentro de estilos.css
+                @media screen and (max-width:480px){
+                    //estilos css
+                }
+
+    -->
+    <h1>Esto es un encabezado</h1>
+
+    <!--hacer esto en un css
+    0-480:red
+    481-600px:blue
+    601-900px:green
+    901 en adelante:pink
+    -->
+
+</body>
+</html>

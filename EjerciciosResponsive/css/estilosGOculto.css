@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/*visibilitu:hidden
+    display:none;
+    */
+
+.hamburger{
+    display: none;
+}
+
+.menu{
+    display: flex;
+
+}
+
+@media screen and (max-width:768px) {
+    .hamburger{
+        display: block;
+    }
+    .menu{
+       /*display: none;*/
+       flex-direction: column;
+       position: absolute;
+       right: 20px;
+       top: 200px;
+    }
+    .menu.activo{
+        display: flex;
+    }
+}

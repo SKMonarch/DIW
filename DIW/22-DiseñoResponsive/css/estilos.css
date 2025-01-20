@@ -1,0 +1,81 @@
+body{
+    background-color: pink;
+}
+@media screen and (max-width:480px){
+    /*estilos css*/
+    body{
+        background-color: red;
+    }
+}
+@media screen and (min-width:481px) and (max-width:600px){
+    body{
+        background-color: blue;
+    }
+}
+@media screen and (min-width:601px) and (max-width:900px){
+    body{
+        background-color: green;
+    }
+}
+/*otra forma de poner el diseño-responsive, pq se queda con el mas restrictivo al final, no sobreescribe los cosos, entonces lo pongo al reves, puediendo quitar el min-width
+@media screen and (max-width:900px){
+    body{
+        background-color: green;
+    }
+}
+    @media screen and (max-width:600px){
+    body{
+        background-color: blue;
+    }
+}
+@media screen and (max-width:480px){
+    body{
+        background-color: red;
+    }
+}
+    */
+
+/*DISEÑO RESPONSIVE MOVIL
+body{
+    background-color:red;
+}
+@media screen and (min-width:901px){
+    body{
+        background-color:pink;
+    }
+}
+@media screen and (max-width:900px){
+    body{
+        background-color:green;
+    }
+}
+@media screen and (max-width:600px){
+    body{
+        background-color:blue;
+    }
+}
+
+*/
+
+
+@media screen and (orientation:landscape){
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        size:50px;
+    }
+}
+@media screen and (orientation:portrait){
+    h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        size:20px;
+    }
+}
+
+/*Puntos de ruptura tipicos:
+- Pantallas extra pequeñas (phones, hasta 600px)
+- Pantallas pequeñas (tablets en vertical, y larga phones desde 601px hasta 768)
+- Pantallas medianas (tablets en horizontal desde 768px hasta 992px)
+- Pantallas grandes (laptops/desktop desde 992px hasta 1200px)
+- Pantallas extra grandes (large laptops/desktops desde 1200px)
+*/
+

@@ -1,0 +1,8 @@
+
+.container{
+    flex-direction:colum;
+}
+#menu, #main{
+flex-basis:100%;
+}
+
