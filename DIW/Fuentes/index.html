@@ -8,7 +8,14 @@
 </head>
 <body>
     <h1>Esto es un Encabezado</h1>
-    <img src="img/animales-marinos-raros6-1-1280x720.jpg" alt="Animal RARO">
+    
+    <picture>
+        
+        <source  srcset="img/mono2.jpg" media="(max-width:768px)"  >
+        <source srcset="img/mono.jpg" media="(min-width:769px )" >
+        <img src="img/mono.jpg" alt="Animal RARO">
+    </picture>
+   
     <!--
     Diseño responsive para fuentes
     Usar medidas relativas:
@@ -23,6 +30,10 @@
 
 
     Diseño Responsive para imágenes
+    Usar max-width:100% con hegiht : auto para adaptr las imágenes
+    Usar picture en html para mostrar diferentes imágenes según el dispositivo
+
+    Imágens
     -->
 </body>
 </html>
