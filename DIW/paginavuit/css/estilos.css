@@ -28,7 +28,6 @@ body{
 
 .nav {
     display: flex;
-    
     align-items: center;
     flex-wrap: wrap;
     box-shadow:  1px 1px 6px greenyellow;
@@ -104,4 +103,17 @@ body{
 
 .footer .enlacesPie a:hover{
     text-decoration: underline dotted yellowgreen;
+}
+@media screen and (max-width:) {
+    
+}
+
+@media screen and (max-width:600px) {
+    .nav{
+        flex-direction: column;
+        width: 100%;
+    }
+    .header{
+        flex-direction: column;
+    }
 }

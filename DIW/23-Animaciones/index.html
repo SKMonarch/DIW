@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        audio{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <!--1 forma-->
+    <a href="css/333360__harlack__oh-my-god.wav">OH MY GOD</a>
+    <!--2 forma-->
+    <audio href="css/333360__harlack__oh-my-god.wav" controls autoplay muted loop>
+        No se ha podido cargar el audio
+    </audio>
+    <!--
+        Atributos opcionales
+        controls: muestra el reproductor de sonido
+        autoplay: al cargar la página el audio se reproduce
+        mited: al cargar la página el audio no tenga sonido
+        loop: que el se reproduzca en bucle
+        hidden: oculta el reproductor de audio
+        
+        -->
+
+
+    <!--3 forma-->
+    <audio>
+        <source src="css/333360__harlack__oh-my-god.wav" type="audio/wav">
+        <source src="css/333360__harlack__oh-my-god.wav" type="audio/ogg"> 
+    </audio>
+
+
+    <a href="css/Goku dice mondongo.mp4">Mondongo</a>
+    
+    <video src="css/Goku dice mondongo.mp4" constrols autoplay ></video>
+    <video width="640" height="360" controls autoplay >
+        <source src="css/mamagüevo digo glu glu glu (letra).mp4" type="video/mp4">
+    </video>
+    
+</body>
+</html>
