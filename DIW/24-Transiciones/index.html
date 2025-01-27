@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .escalar{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: 0 auto;
+            animation: escalar 2s ;
+        }
+        
+        .traslate{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            animation-name: traslate;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction:normal;
+        }
+        @keyframes escalar {
+            0%{
+                transform: scale(1,1);
+            }
+            25%{
+                transform: scale(2,2);
+            }
+            50%{
+                transform: scale(1,1);
+            }
+            75%{
+                transform: scale(0.5,0.5);
+            }
+        }
+        @keyframes traslate {
+            0%{
+                transform:translateX(0);
+            }
+            50%{
+                transform: translateX(2000px);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            animation-name: rotar2d;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            animation-delay: linear ;
+            animation-direction: reverse;
+
+
+        }
+        @keyframes rotar2d {
+            0%{
+               transform: rotate(0deg) scale(5,5);
+            }
+
+            100%{
+                transform: rotate(360deg) scale(1.5,1.5) tr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--
+    TRANSFORMACIONES 2D transform
+        scaleX(),scaleY(), scale()
+        translateX, translateY, translate(x,y)
+        rotate(deg)
+        skewX(),skewY(), skew()
+        -->
+        <div class="escalar">
+
+        </div>
+        <div class="traslate"></div>
+        <img src="css/mono.jpg" alt="pescao">
+</body>
+</html>
