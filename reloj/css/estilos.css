@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.reloj{
+    background-color: aliceblue;
+    border: 2px solid blue;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: relative;
+}
+
+.eje{
+    background-color: rgb(63, 63, 63);
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.seg{
+    background-color: red;
+    width: 2px;
+    height: 98px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotar 60s steps(60) infinite;
+    transform-origin: bottom;
+}
+
+.min{
+    background-color: gray;
+    width: 2px;
+    height: 98px;
+    position: absolute;
+    top: 0;
+    left: 49.8%;
+    transform: translate(-50%, -50%);
+    animation: rotar 3600s steps(60) infinite;
+    transform-origin: bottom;
+}
+
+.hor{
+    background-color: black;
+    width: 3px;
+    height: 50px;
+    position: absolute;
+    top: 25%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    animation: rotar 86400s linear infinite;
+    transform-origin: bottom;
+}
+
+@keyframes rotar {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

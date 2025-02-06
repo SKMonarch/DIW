@@ -1,0 +1,83 @@
+div{
+    width: 100%;
+}
+
+form{
+    margin-bottom: 40px;
+}
+
+.img1, .img2{
+    width: 300px;
+    height: 150px;
+    display: block;
+    transform: scaleX(-1);
+    
+}
+
+.img1{
+    animation: volver 2.5s forwards;
+}
+
+.box1:checked ~ .img1{
+    animation: ir 2.5s forwards;
+}
+
+@keyframes ir {
+    0%{
+        transform: translate(0px) scaleX(-1);
+    }
+    50%{
+        transform: translateX(calc(100vw - 300px)) scaleX(-1);
+    }
+    100%{
+        transform: translateX(calc(100vw - 300px))
+    }
+}
+
+@keyframes volver {
+    0%{
+        transform: translateX(calc(100vw - 300px));
+    }
+    50%{
+        transform: translateX(0px)
+    }
+    100%{
+        transform: translateX(0px) scaleX(-1)
+    }
+}
+
+.box2:checked ~ .img2{
+    animation: patinarContinuo 5s infinite;
+}
+
+.box2:not(:checked) ~ .img2{
+    animation: volverPatin 5s infinite; /*Mal*/
+}
+
+@keyframes patinarContinuo {
+    0%{
+        transform: translateX(0px) scaleX(-1);
+        
+    }
+    25%{
+        transform: translateX(calc(100vw - 300px)) scaleX(-1);
+    }
+    50%{
+        transform: translateX(calc(100vw - 300px));
+    }
+    75%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px) scaleX(-1);
+    }
+}
+
+@keyframes volverPatin {
+    0%{
+        transform: translate();
+    }
+    100%{
+        transform: translateX(0px) scaleX(-1)
+    }
+}

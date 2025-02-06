@@ -1,0 +1,69 @@
+/*
+    TRANSICIONES
+
+    transition: abreviada
+    transition-property: se indican las propiedades css a cambiar en la transición
+    (width,heigth..) all para cambiar todas las propiedades animables
+
+    transition-duration: duración de la transición, se mide s, ms por defecto es 0
+    y entonces  no funciona, es obligatoripço
+    transition-delay: retraso se mide en s, ms
+    transition-timing-function: velocidad de la transición, linear, ease, ease-in
+    ease-out, steps()
+
+
+    Se asocia  con un elemento html y usando transition
+    */
+
+
+    #btn1{
+        padding: 15px 20px;
+        background-color: gainsboro;
+        box-shadow: 2px 2px gray;
+        border-radius: 10px;
+        transition-property: all;
+        /*transition-duration: 0.5s;
+        transition-timing-function: linear;*/
+        transition: all 0.5s linear;
+        /*transition: background-color 0.5 linear, box-shadow 300ms ease;*/
+    }
+
+
+    #btn1:hover{
+        background-color: gray;
+        box-shadow: 2px 2px 4px gainsboro;
+        transform: scale(1,2);
+    }
+
+
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+    }
+
+
+    iframe {
+        width: 200px;
+        height: 200px;
+        border: none;
+        position: absolute;
+        opacity: 0;
+        animation: cambiar 2s infinite ;
+    }
+
+    @keyframes cambiar {
+        0% { opacity: 1; }  
+        25% { opacity: 1; } 
+        50% { opacity: 1; }  
+        75% { opacity: 1; }  
+        100% { opacity: 1; } 
+    }
+
+    iframe:nth-child(1) { animation-delay: 0s; }
+    iframe:nth-child(2) { animation-delay: 1s; }
+    iframe:nth-child(3) { animation-delay: 2s; }
+    iframe:nth-child(4) { animation-delay: 3s; }
+    iframe:nth-child(5) { animation-delay: 4s; }

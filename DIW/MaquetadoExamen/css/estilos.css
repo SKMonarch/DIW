@@ -1,0 +1,220 @@
+/*Punto de ruptura a 800px pasamos de 4 columnas a 2
+Punto de ruptura a 650px pasamos de 2 columnas a 1,
+ desaparece el menú de navegación y desaparece el título
+Arquitectos de la imagen de la cabecera*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+/*HEADER*/
+.nav  {
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+}
+.nav a:first-of-type{
+    display:flex;
+    flex-direction: row;
+    justify-content:start;
+}
+.nav a{
+    margin: 10px;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.nav a:hover{
+    background-color: rgb(160, 157, 157);
+    padding:10px;
+    border-radius: 25px;
+    transition: 2s ;
+}
+
+
+.im-header img{
+    width: 99%;
+    padding-left:10px;
+    position: static;
+ 
+}
+.im-header .titulo{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    align-items: center;
+    margin-top: 30%;
+
+}
+.titulo{
+    margin-left: 40%;
+}
+.titulo .tit1{
+    background-color: black;
+    color: white;
+    font-size: 80px;
+    padding: 10px;
+   
+ 
+}
+.titulo .tit2{
+    font-size: 80px;
+    align-self: center;
+    color: white;
+}
+
+
+/*Proyectos*/
+.proyectos p{
+    font-size: x-large;
+    margin-left: 50px;
+    margin-bottom: 5px;   
+
+}
+hr{
+    width: 90%;
+    margin:0 0 10px 50px;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(4,auto) ;
+    margin-left: 50px;
+    position: static;
+    
+}
+
+.tarjeta{
+    width: auto;
+    margin: 0 10px 10px 0 ;
+}
+.tarjeta .texto{
+    position: absolute;
+    color: white;
+    background-color: black;
+}
+.tarjeta img{
+    width: 70%;
+}
+
+/*Sobre*/
+.sobre p:first-of-type{
+    margin-top: 20px;
+    font-size: x-large;
+    margin-left: 50px;
+    margin-bottom: 5px;   
+
+}
+.sobre p{
+    margin: 10px 0 10px 50px;
+}
+
+.galeria-sobre{
+    display:grid;
+    grid-template-columns:repeat(4,auto) ;
+    margin-left: 50px;
+}
+.tarjeta-sobre{
+    width: auto;
+    margin: 0 10px 10px 0 ;
+}
+.tarjeta-sobre img{
+    width: 70%;
+}
+.tarjeta-sobre .contactar{
+    background-color: grey;
+    justify-self: center;
+    padding: 20px;
+    margin: 0 0 10px 0;
+}
+
+/*Contacto*/
+
+.contacto p:first-of-type{
+    font-size: x-large;
+    margin-left: 50px;
+    margin-bottom: 5px;   
+}
+.contacto p{
+    margin: 10px 0 10px 50px;
+    font-size: large;
+}
+.contacto form{
+    margin: 0 95px 20px 50px;
+    display:grid;
+    grid-template-rows:repeat(1,auto) ;
+    
+}
+.contacto form input{
+    margin-bottom: 15px;
+}
+.contacto form input:last-of-type{
+    margin-right: 80%;
+    font-size:small;
+    background-color: black;
+    color: white;
+    
+    
+}
+/*Footer*/
+.footer{
+    margin: 5px;
+    background-color: black;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer a{
+    justify-items: center;
+    font-size: large;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+
+@media screen and (max-width:800px) {
+    .galeria{
+        display:grid;
+        grid-template-columns:repeat(2,auto) ;
+        margin-left: 50px;
+        position: static;
+        
+    }
+    
+    .galeria-sobre{
+        display:grid;
+        grid-template-columns:repeat(2,auto) ;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .galeria{
+        display:grid;
+        grid-template-columns:repeat(1,auto) ;
+        margin-left: 50px;
+        
+    }
+   
+    .galeria-sobre{
+        display:grid;
+        grid-template-columns:repeat(1,auto) ;
+        margin-left: 50px;
+    }
+    .nav{
+        display: none;
+    }
+
+    .titulo{
+        display: none;
+    }
+
+}
